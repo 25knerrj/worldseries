@@ -10,5 +10,8 @@ for champ in list:
     if champ == team:
         print(list[cont-3])
         win += 1
-print(team,'won',win,'World Series')
+if win == 0:
+    print("Team not found.")
+else:
+    print(team,'won',win,'World Series')
 file.close()
